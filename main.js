@@ -1,28 +1,26 @@
-let continue = true
-
-while ( continue ) {
-
+function deafGrandma() {
     let goodbyes = 0
-    let userInput = prompt()
-
-    if ( userInput = "" ) {
-        alert("WHAT!?")
-    }
-    else if ( userinput.toUppercase != statement ) {
-        alert("SPEAK UP, KID!")
-    }
-    else if ( statement.toUppercase == statement ) {
-        alert('NO, NOT SINCE 1946!')
-    }
-    else if ( userinput == "GOODBYE!" ) {
-        goodbyes + 1
-
-        if ( goodbyes == 1 ) {
-            alert("LEAVING SO SOON?')
+    let userInput=window.prompt("HEY KID!")
+    while (goodbyes<3) {
+        if ( userInput == "" ) {
+            window.prompt("WHAT!?")
         }
-        else if ( goodbyes == 2 ) {
-            alert("LATER, SKATER!")
-            continue = false
+        else if (userInput.toUpperCase() !== userInput ) {
+            window.prompt("SPEAK UP, KID!")
+        }
+        else if (userInput.toUpperCase() === userInput && userInput !=="GOODBYE!") {
+            window.prompt('NO, NOT SINCE 1946!')
+        }
+        else if (userInput === "GOODBYE!" ) {
+
+            if ( goodbyes === 0 ) {
+                window.prompt("LEAVING SO SOON?'")
+            }
+            else if ( goodbyes === 1 ) {
+                window.prompt("LATER, SKATER!")
+            }
+            goodbyes += 1
         }
     }
 }
+deafGrandma()
